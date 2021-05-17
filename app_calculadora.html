@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="app_calculadora.css">
+</head>
+
+<body>
+  <div class="area-calc">
+    <div class="area-componentes">
+      <input 
+        type="text"
+        class="painel"
+        id="resultado"
+        placeholder="0"
+        disabled="disabled"
+        >
+        <br>
+      <div class="botoes">
+        <div class="linhas">
+          <button onclick="calcular('acao', 'c')" type="button" id="btn_c" class="btn-calc">C</button>
+          <button onclick="calcular('acao', '/')" type="button" id="btn_d" class="btn-calc">/</button>
+          <button onclick="calcular('acao', '*')" type="button" id="btn_m" class="btn-calc">*</button>
+          <button onclick="calcular('valor', '7')" type="button" id="btn_7" class="btn-calc">7</button>
+          <button onclick="calcular('valor', '8')" type="button" id="btn_8" class="btn-calc">8</button>
+          <button onclick="calcular('valor', '9')" type="button" id="btn_9" class="btn-calc">9</button>
+          <button onclick="calcular('acao', '-')" type="button" id="btn_sub" class="btn-calc">-</button>
+          <button onclick="calcular('valor', '4')" type="button" id="btn_4" class="btn-calc">4</button>
+          <button onclick="calcular('valor', '5')" type="button" id="btn_5" class="btn-calc">5</button>
+          <button onclick="calcular('valor', '6')" type="button" id="btn_6" class="btn-calc">6</button>
+          <button onclick="calcular('acao', '+')" type="button" id="btn_s" class="btn-calc">+</button>
+          <button onclick="calcular('valor', '1')" type="button" id="btn_1" class="btn-calc">1</button>
+          <button onclick="calcular('valor', '2')" type="button" id="btn_2" class="btn-calc">2</button>
+          <button onclick="calcular('valor', '3')" type="button" id="btn_3" class="btn-calc">3</button>
+          <button onclick="calcular('acao', '=')" type="button" id="btn_r" class="btn-calc">=</button>
+          <button onclick="calcular('valor', '0')" type="button" id="btn_0" class="btn-calc">0</button>
+          <button onclick="calcular('acao', '.')" type="button" id="btn_p" class="btn-calc">.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app_calculadora.js"></script>
+</body>
+</html>
